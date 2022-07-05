@@ -91,6 +91,10 @@ GEM
     erubi (1.10.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
+    graphiql-rails (1.8.0)
+      railties
+      sprockets-rails
+    graphql (2.0.11)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.0.2)
@@ -103,6 +107,8 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jsbundling-rails (1.0.3)
+      railties (>= 6.0.0)
     loofah (2.13.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -218,8 +224,11 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  graphiql-rails
+  graphql
   importmap-rails
   jbuilder
+  jsbundling-rails (~> 1.0)
   nokogiri
   puma (~> 5.0)
   rails (~> 7.0.1)

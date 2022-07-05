@@ -1,0 +1,15 @@
+{
+  "name": "app",
+  "private": "true",
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@rails/actioncable": "^6.0.5",
+    "esbuild": "^0.14.48",
+    "graphql-ruby-client": "^1.10.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
