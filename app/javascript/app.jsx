@@ -21,11 +21,7 @@ const client = new ApolloClient({
 
 const Inside = () => {
   const { data, loading } = useSubscription(
-    SUBSCRIPTION, {
-      onSubscriptionData: (data) => {
-        console.log(data)
-      }
-    }
+    SUBSCRIPTION
   );
   return (
     <>

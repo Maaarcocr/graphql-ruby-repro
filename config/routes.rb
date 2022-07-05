@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'number/index'
+  get 'number', to: "number#index"
   get 'root/index'
   if Rails.env.development?
     mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/graphql"

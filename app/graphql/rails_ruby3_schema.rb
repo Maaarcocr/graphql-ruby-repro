@@ -37,4 +37,8 @@ class RailsRuby3Schema < GraphQL::Schema
     # For example, use Rails' GlobalID library (https://github.com/rails/globalid):
     GlobalID.find(global_id)
   end
+
+  rescue_from StandardError do |error|
+    puts "AN ERROR: #{error}"
+  end
 end
